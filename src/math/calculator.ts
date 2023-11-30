@@ -9,7 +9,7 @@ const CalculatorSchema = z.object({
     expression: z.string().describe("The calculation you wish to perform"),
 });
   
-class Calculator extends StructuredTool<typeof CalculatorSchema> {
+export class Calculator extends StructuredTool<typeof CalculatorSchema> {
     constructor() {
       super({
         name: "Simple Calculator",
@@ -28,7 +28,3 @@ class Calculator extends StructuredTool<typeof CalculatorSchema> {
       });
     }
 }
-
-const calculator = new Calculator();
-
-export default calculator;
