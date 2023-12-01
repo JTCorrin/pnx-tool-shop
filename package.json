@@ -1,12 +1,17 @@
 {
   "name": "pnx-tool-shop",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "A repository of useful, structured tools for use with the pnx library",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup"
   },
+  "files": [
+    "/dist"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,6 +24,7 @@
   },
   "dependencies": {
     "expr-eval": "^2.0.2",
+    "serpapi": "^2.0.0",
     "zod": "^3.22.4"
   }
 }

@@ -30,6 +30,7 @@ export class SendOutlookEmail extends StructuredTool<typeof SendEmailSchema> {
                     await this.sendEmailUsingMicrosoftGraph(input.recipient, input.subject, input.body);
                     return "Email sent successfully.";
                 } catch (error) {
+                    console.error(error)
                     throw new Error("Failed to send email.");
                 }
             }
